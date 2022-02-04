@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+<div>
+  {% block normal_content %}
+  <div>
+    <h1>{{text.potential_info.name}}</h1>
+
+    <a>{{text.potential_info.text}}</a>
+  </div>
+  <div id="plot_0" class="chart "></div>
+  <div id="plot_1" class="chart "></div>
+  <div id="plot_2" class="chart "></div>
+  <div id="plot_3" class="chart "></div>
+  <div id="plot_4" class="chart "></div>
+  <div id="plot_5" class="chart "></div>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript">
+    let layout = {plot_bgcolor: '#aaaaaa'};
+    let config = {responsive: true};
+    let plot_0 = {{graphJSON.0 | safe}};
+    pot_plot = {{pot_plot | safe}};
+    Plotly.newPlot('plot_0',[plot_0, pot_plot], layout, config);
+    let plot_1 = {{graphJSON.1 | safe}};
+    Plotly.newPlot('plot_1',[plot_1, pot_plot], layout, config);
+    let plot_2 = {{graphJSON.2 | safe}};
+    Plotly.newPlot('plot_2',[plot_2, pot_plot], layout, config);
+    let plot_3 = {{graphJSON.3 | safe}};
+    Plotly.newPlot('plot_3',[plot_3, pot_plot], layout, config);
+    let plot_4 = {{graphJSON.4 | safe}};
+    Plotly.newPlot('plot_4',[plot_4, pot_plot], layout, config);
+    let plot_5 = {{graphJSON.5 | safe}};
+    Plotly.newPlot('plot_5',[plot_5, pot_plot], layout, config);
+  </script>
+  {% endblock %}
+</div>
