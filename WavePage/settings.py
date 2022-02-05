@@ -61,6 +61,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "WavePage.wsgi.application"
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
