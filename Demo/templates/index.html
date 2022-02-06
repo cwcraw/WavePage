@@ -4,7 +4,86 @@
 <div>
   {% block normal_content %}
   <div>
-    Insert wave function boiler plate
+    <h1>A Particle in a Webpage</h1>
+    <h3>About This Project</h3>
+    <p>
+      This widget was created as a way to learn Python, particularly numpy,
+      matplotlib and Django. It is an exploration of the classic 'particle in a
+      box' problem which students encounter in their first semester of quantum
+      mechanics or physical chemistry. You will be able to find plots of the
+      first six energy levels of the time independent Schrödinger equation here.
+    </p>
+    <h3>Physics Background</h3>
+    <p>
+      A 'particle in a box' is a toy system used to introduce students to the
+      basics of Quantum Mechanics and the Schrödinger equation. The Schrödinger
+      Equation describes the behavior of a quantum system, such as an electron,
+      in space in time. A key component of the equation is the potential. The
+      potential describes the background environment the electron may find
+      itself in. If it is near another electron or a nucleus, the potential
+      would reflect this.
+    </p>
+
+    <p>
+      The underlying assumption of a 'particle in a box' is that the particle is
+      equally likely to be in any position in side the box, but cannot leave the
+      box. The Schrödinger Equation can reflect this by setting the potential to
+      zero inside the box and infinity outside the box. You can then solve the
+      Schrödinger Equation to get a description of the particles behavior in
+      space and time - also known as the wave function. The square of the wave
+      function is proportinal to the probibility of measuring a particles
+      location at a certain point at a given time. by plotting the square of the
+      wavefunction you can determine where you are likely to measure the
+      location of the particle.
+    </p>
+
+    <p>
+      You can make the 'particle in a box' system more interesting by changing
+      varying the potential inside the 'box.' Think of this a box with a sloped
+      or bowl shaped bottom. In the examples created on this site we have 5
+      additional potentials. Three are interesting conceptually to help students
+      understand what a wave function is and to demonstrate quantum tunnelling.
+      These whould be the step potential and the two barrier potentials. The
+      other two examples, the harmonic oscillator and the Morse potential are
+      interesting from a chemist's point of view. They represent first steps to
+      modelling an electron in an atom. Please visit the demonstrations for more
+      details
+    </p>
+
+    <p>
+      There is one final wrinkle to keep in mind. Particles can have lower or
+      higher energy. This will change where a particle is likely to be found -
+      that is, the shape of the wave function. In our examples the energy exists
+      at discrete values only and the first six values are shown.
+    </p>
+
+    <p>
+      For more information I would recommend reviewing the wikipedia pages on
+      <a href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation"
+        >the Schrödinger equation</a
+      >
+      or
+      <a
+        href="https://en.wikipedia.org/wiki/Particle_in_a_box#One-dimensional_solution"
+      >
+        a particle in a box
+      </a>
+      to cover the basics and give a more detailed explanation of the math
+      involved.
+    </p>
+
+    <h3>Tools Used</h3>
+    <p>
+      This site was created using
+      <a href="https://www.djangoproject.com/">Django</a> with
+      <a href="https://getbootstrap.com/"> bootstrap</a> and
+      <a href="https://plotly.com/javascript/">plotly</a> to handle the plots.
+    </p>
+
+    <p>
+      All calculations are done using a python and
+      <a href="https://numpy.org/"> NumPy</a>.
+    </p>
   </div>
   {% endblock %}
 </div>
