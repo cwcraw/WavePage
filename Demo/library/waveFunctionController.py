@@ -62,7 +62,7 @@ class WaveFunctionController:
         potential_info = {
             potential.STEP.value: {
                 "name": "Step Potential",
-                "text": "Sorry team I cannot, for the life of me, remember the boundary conditions at the step that lead to the behavior observed at high energy levels. Do note, however, that at lower energies we see the expected decay behavior, as the particle does not have enough energy to reside in the high potential step.",
+                "text": "At lower energies we see the expected decay behavior, as the particle does not have enough energy to reside in the high potential step. At hiher energy levels we see more complex behavior demonstrating the particle's probibility of reflecting off or transmitting through the barrier.",
             },
             potential.BARRIER.value: {
                 "name": "Low Barrier Potential",
