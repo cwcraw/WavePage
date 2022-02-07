@@ -17,7 +17,7 @@
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script type="text/javascript">
-    let layout = {plot_bgcolor: '#aaaaaa'};
+    let layout = {plot_bgcolor: '#aaaaaa', legend: {x:0, y:0,xanchor: 'left', yanchor: 'top'}};
     let config = {responsive: true};
     let plot_0 = {{graphJSON.0 | safe}};
     pot_plot = {{pot_plot | safe}};
