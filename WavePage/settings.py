@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 import environ
+from whitenoise import WhiteNoise
 
 env = environ.Env(DEBUG=(bool, False))
 environ.Env.read_env()
@@ -30,16 +31,29 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ["*wavepage.herokuapp.*"]
-
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["*herokuapp.com"])
 
 # Application definition
 
 INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
 
-MIDDLEWARE = []
+MIDDLEWARE = [
+    "django.middleware.security.SecurityMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
+]
 
 ROOT_URLCONF = "WavePage.urls"
 
@@ -48,14 +62,14 @@ TEMPLATES = [
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [os.path.join("./Demo/templates/")],
         "APP_DIRS": True,
-        # 'OPTIONS': {
-        #     'context_processors': [
-        #         'django.template.context_processors.debug',
-        #         'django.template.context_processors.request',
-        #         'django.contrib.auth.context_processors.auth',
-        #         'dfjango.contrib.messages.context_processors.messages',
-        #     ],
-        # },
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+            ],
+        },
     },
 ]
 
