@@ -1,5 +1,11 @@
 # Wave Function Demonstration page
 
+This widget was created as a way to learn Python, particularly numpy,
+plotly and Django. It is an exploration of the classic 'particle in a box'
+problem which students encounter in their first semester of quantum
+mechanics or physical chemistry. You will be able to find plots of the
+first six energy levels of the time independent Schrödinger equation here.
+
 ## Project Setup
 
 1. Create a virtual environment using venv: `python -m python3 -m venv venv`
