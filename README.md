@@ -20,5 +20,3 @@ You should now be able to go to the URL displayed in the terminal.
 - Improve descriptive text to better explain the concepts demonstrated.
 - Improve the page layout
 - Add user input to adjust the potentials
-- Possibly use webpack to bunde bootstrap and plotly
-- Possibly move to docker for deployment
