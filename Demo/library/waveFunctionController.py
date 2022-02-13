@@ -62,11 +62,11 @@ class WaveFunctionController:
         potential_info = {
             potential.STEP.value: {
                 "name": "Step Potential",
-                "text": "At lower energies we see the expected decay behavior, as the particle does not have enough energy to reside in the high potential step. At hiher energy levels we see more complex behavior demonstrating the particle's probibility of reflecting off or transmitting through the barrier.",
+                "text": "At lower energies we see the expected decay behavior, as the particle does not have enough energy to reside in the high potential step. At higher energy levels we see more complex behavior demonstrating the particle's probability of reflecting off or transmitting through the barrier.",
             },
             potential.BARRIER.value: {
                 "name": "Low Barrier Potential",
-                "text": 'A finite barrier can demonstrate quantum tunnelling. We can see that in the region of the barrier the probibility density drops towards 0, but the particle can be found on both sides of the barrier. Increaseing the "height" of the barrier would lower the likelihood of tunneling until the particle is found on only oneside. Note that there are two degenerate states, representing the particle initialy being on either side of the barrier. Here we are displaying only non-degenerate states. See the high barrier case to gain an understanding of the degenerate cases.',
+                "text": 'A finite barrier can demonstrate quantum tunnelling. We can see that in the region of the barrier the probability density drops towards 0, but the particle can be found on both sides of the barrier. Increasing the "height" of the barrier would lower the likelihood of tunneling until the particle is found on only one side. Note that there are two degenerate states, representing the particle initialy being on either side of the barrier. Here we are displaying only non-degenerate states. See the high barrier case to gain an understanding of the degenerate cases.',
             },
             potential.HIGH_BARRIER.value: {
                 "name": "High Barrier Potential",
@@ -74,15 +74,15 @@ class WaveFunctionController:
             },
             potential.MORSE.value: {
                 "name": "Morse Potential",
-                "text": "A Morse potential is a simple improvement on the harmonic oscillator. It is of the form V=De*(1-e^(-a*x))^2, where x (again) is the displacement from equlibrium, De is the 'well depth', and a controls the width of the well. As a model for a diatomic molecule, De can be thought of as the dissaciataion energy. The energy levels are quantized, with integer values starting from 0. However there is an upper bound to these numbers, representing a dissacosciated molecule.",
+                "text": "A Morse potential is a simple improvement on the harmonic oscillator. It is of the form V=De*(1-e^(-a*x))^2, where x (again) is the displacement from equlibrium, De is the 'well depth', and controls the width of the well. As a model for a diatomic molecule, De can be thought of as the dissociation energy. The energy levels are quantized, with integer values starting from 0. However there is an upper bound to these numbers, representing a dissociated molecule.",
             },
             potential.HO.value: {
                 "name": "Harmonic Oscillator",
-                "text": "A harmonic oscillator potential is an idealized spring - the further you go from equilibrium, the stronger the restoring force is. This is represented in Hook's law, F=kx, where F is the force, k is the spring constant and x is the displacement from equilibrium. For our potential we are concerned with the potential energy, V = 1/2*k*x^2. For a quantum system the energy levels are proportional to n+1/2 where n is an integer value starting at 0. Harmonic oscilators are good for small displacements or small values of n. However, as you move further from equilibrium anharmonic components start to dominate.",
+                "text": "A harmonic oscillator potential is an idealized spring - the further you go from equilibrium, the stronger the restoring force is. This is represented in Hook's Law, F=kx, where F is the force, k is the spring constant and x is the displacement from equilibrium. For our potential we are concerned with the potential energy, V = 1/2*k*x^2. For a quantum system the energy levels are proportional to n+1/2 where n is an integer value starting at 0. Harmonic oscilators are good for small displacements or small values of n. However, as you move further from equilibrium anharmonic components start to dominate.",
             },
             potential.OPEN.value: {
                 "name": "Particle in a Box",
-                "text": "A particle in a box is a standard starting point for studys of Quantum Mechanics. In a quantum system, a particle in a box can only have certain well defined energies, which limit the likelihood of the particle be measured at a given postion at any time. These probabilities take the form of a square of a sine function, with the requirement that the probability must be equal to 0 at either end of the box - that is, the particle can not exit the box. This second requirement means that the sine function must be of the form sin(nx), where n is a whole number. Although a simple model, it can be used to describe some real world situations, like a conjugated polyene in chemistry. A conjugated polyene is a long straight molecule whose structure allows electrons to traverse its length",
+                "text": "A particle in a box is a standard starting point for studies of Quantum Mechanics. In a quantum system, a particle in a box can only have certain well defined energies, which limit the likelihood of the particle be measured at a given postion at any time. These probabilities take the form of a square of a sine function, with the requirement that the probability must be equal to 0 at either end of the box - that is, the particle cannot exit the box. This second requirement means that the sine function must be of the form sin(nx), where n is a whole number. Although a simple model, it can be used to describe some real world situations, like a conjugated polyene in chemistry. A conjugated polyene is a long straight molecule whose structure allows electrons to traverse its length",
             },
         }
 
