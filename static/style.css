@@ -1,0 +1,19 @@
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.container {
+  padding: 80px 15px 0;
+}
+.flexcontainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.innerbox {
+  flex: 1 0 33%;
+  border: 5px solid #222;
+  min-height: 33.33vh;
+}
