@@ -5,12 +5,71 @@
   {% block normal_content %}
   <div>
     <h1>About Me</h1>
-    <p>
+    <!-- <p>
       This is still a work in progress. Please visit my
       <a href="https://github.com/cwcraw">GitHub</a> or
       <a href="https://www.linkedin.com/in/chip-crawford-berkeley/">LinkedIn</a>
       pages for more information.
-    </p>
+    </p> -->
+    <div class="container">
+      <div class="row" style="margin-top:10px">
+        <div class="col">
+          <img
+            class="img-fluid"
+            style="min-width:100px;"
+            src="{{STATIC_URL}}/img/father_daughter.jpg"
+            alt="The developer (left) with his daughter"
+          />
+          <figcaption>The developer (left) with his daughter</figcaption>
+        </div>
+        <div class="col-8" style="margin-top:10px">
+          <p>
+            Chip Crawford is a software engineer living in Tokyo, Japan. Before
+            leaving California for Japan, he worked in the semiconductor
+            industry. In this industry, he supported the implementation of
+            cutting edge techniques to improve metrology and quality control.
+            Wanting to transition to a career that provided a more direct
+            connection to the technologies that are changing people’s lives, he
+            attended
+            <a href="https://www.codechrysalis.io/"
+              >Code Chrysalis Coding Bootcamp </a
+            >. At Code Chrysalis he learned the basics of web development and
+            developed an interest in presenting numerical information clearly on
+            the web. Since graduation he has been working as a software engineer
+            in Tokyo.
+          </p>
+          <p>
+            Chip attended
+            <a href="https://www.wm.edu/as/chemistry/index.php">
+              The College Of William and Mary
+            </a>
+            for undergraduate and received his PhD at UC, Berkeley working under
+            Professor
+            <a href="https://pines.berkeley.edu/about"> Alex Pines </a>. For
+            more details on his education and work experience please visit his
+            <a href="https://www.linkedin.com/in/chip-crawford-berkeley/"
+              >LinkedIn</a
+            >
+            Page.
+          </p>
+          <p>
+            Outside of work, Chip’s interests include spending time with his
+            family, reading obscure history, working on coding projects, biking
+            and rock climbing. Once his familial responsibilities settle down he
+            looks forward to volunteering again - in the past having worked in
+            soup kitchens and
+            <a href="https://pubsapp.acs.org/cen/coverstory/85/8543cover.html">
+              teaching in prisons </a
+            >.
+          </p>
+          <p>
+            The repository for this page and other examples of his independent
+            coding projects can be found at his
+            <a href="https://github.com/cwcraw">GitHub</a> page.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
   {% endblock %}
 </div>
