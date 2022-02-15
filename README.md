@@ -19,4 +19,5 @@ You should now be able to go to the URL displayed in the terminal.
 
 - Improve descriptive text to better explain the concepts demonstrated.
 - Improve the page layout
+- Make the pages mobile responsive
 - Add user input to adjust the potentials
